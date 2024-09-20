@@ -125,7 +125,7 @@ body {
 
 .header_contents p {
     max-width: 50%;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 25px;
     color: var(--primary-font-color);
     font-weight: 500;
@@ -161,17 +161,141 @@ body {
 
 }
 
+/* About Section */
+.about_section {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 35px 257px;
+}
+
+.about_contents {
+    color: var(--primary-font-color);
+
+}
+
+.about_contents h1 {
+    font-size: 55px;
+}
+
+.about_contents p {
+    font-size: 24px;
+    text-align: justify;
+    margin: 20px 0px;
+}
+
+.skills_container {
+    margin: 20px 0px;
+}
+
+.skills_container .skills_item h5 {
+    font-size: 24px;
+}
+
+#ux_design {
+    position: relative;
+    max-width: 700px;
+    height: 20px;
+    margin: 20px 0px;
+    background-color: var(--primary-font-color);
+}
+
+#ux_design p {
+    width: 80%;
+    height: 20px;
+    background: var(--secondary-font-color);
+}
+
+#ux_design img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 90px;
+    cursor: pointer;
+}
+
+#app_design {
+    position: relative;
+    max-width: 700px;
+    height: 20px;
+    margin: 20px 0px;
+    background-color: var(--primary-font-color);
+}
+
+#app_design p {
+    width: 70%;
+    height: 20px;
+    background: var(--secondary-font-color);
+}
+
+#app_design img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 145px;
+    cursor: pointer;
+}
+
+#graphic_design {
+    position: relative;
+    max-width: 700px;
+    height: 20px;
+    margin: 20px 0px;
+    background-color: var(--primary-font-color);
+}
+
+#graphic_design p {
+    width: 80%;
+    height: 20px;
+    background: var(--secondary-font-color);
+}
+
+#graphic_design img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 90px;
+    cursor: pointer;
+}
+
+#web_design {
+    position: relative;
+    max-width: 700px;
+    height: 20px;
+    margin-top: 20px;
+    background-color: var(--primary-font-color);
+}
+
+#web_design p {
+    width: 90%;
+    height: 20px;
+    background: var(--secondary-font-color);
+}
+
+#web_design img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 40px;
+    cursor: pointer;
+}
+
+
 /* Navbar Responsive Code */
 @media (max-width:768px) {
-    .nav_menu{
+    .nav_menu {
         border-radius: 10px;
         background-color: black;
         opacity: 80%;
         padding: 20px 0;
     }
-    #download_cv_btn{
+
+    #download_cv_btn {
         opacity: 100%;
     }
+
     .header_section {
         height: 100vh;
         background-size: cover;
@@ -230,10 +354,68 @@ body {
     .header_contents p {
         max-width: 100%;
     }
-    .header_btn_container{
+
+    .header_btn_container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
+}
+
+/* About Responsive Code */
+@media(max-width:768px) {
+    .about_section {
+        flex-direction: column;
+    }
+
+    .about_section {
+        font-family: "Montserrat", sans-serif;
+        margin-top: 10px;
+        padding: 15px 15px;
+    }
+
+    .about_contents h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .about_contents p {
+        font-size: 18px;
+        text-align: justify;
+        margin: 10px 0px;
+    }
+
+    #ux_design img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 60px;
+        cursor: pointer;
+    }
+
+    #app_design img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 95px;
+        cursor: pointer;
+    }
+    #graphic_design img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 60px;
+        cursor: pointer;
+    }
+    #web_design img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        cursor: pointer;
+    }
+    
+
+    #about_img {}
 }
