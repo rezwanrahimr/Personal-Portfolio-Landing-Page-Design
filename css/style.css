@@ -282,6 +282,58 @@ body {
     cursor: pointer;
 }
 
+/* services section */
+.services_serction {
+    font-family: "Montserrat", sans-serif;
+    padding: 35px 257px;
+    margin: 50px 0px;
+}
+
+.services_serction>h2 {
+    text-align: center;
+    font-size: 55px;
+    color: var(--primary-font-color);
+}
+
+.services_serction>p {
+    text-align: center;
+    font-size: 24px;
+    color: var(--primary-font-color);
+}
+
+.services_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 60px 0px;
+
+}
+
+/* Services Card */
+.services_item {
+    width: 327px;
+    height: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    color: black !important;
+    background-color: var(--primary-font-color);
+}
+
+.services_item img {
+    max-width: 100%;
+}
+
+.services_item h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.services_item p {
+    font-size: 18px;
+    text-align: justify;
+}
 
 /* Navbar Responsive Code */
 @media (max-width:768px) {
@@ -379,7 +431,7 @@ body {
         font-size: 35px;
         text-align: center;
     }
-    
+
     .about_contents p {
         font-size: 18px;
         text-align: justify;
@@ -401,6 +453,7 @@ body {
         right: 95px;
         cursor: pointer;
     }
+
     #graphic_design img {
         position: absolute;
         top: 0;
@@ -408,6 +461,7 @@ body {
         right: 60px;
         cursor: pointer;
     }
+
     #web_design img {
         position: absolute;
         top: 0;
@@ -415,7 +469,36 @@ body {
         right: 20px;
         cursor: pointer;
     }
-    
+
 
     #about_img {}
+}
+
+/* Service Responsive Code */
+@media (max-width:768px) {
+    .services_serction {
+        font-family: "Montserrat", sans-serif;
+        margin-top: 10px;
+        padding: 15px 15px;
+    }
+
+    .services_serction>h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .services_serction>p {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    .services_items {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-left: 20px;
+
+    }
 }
