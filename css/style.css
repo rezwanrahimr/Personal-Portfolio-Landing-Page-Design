@@ -27,6 +27,8 @@ body {
 
 }
 
+/* Navbar Section */
+
 .nav_container {
     font-family: "Montserrat", sans-serif;
     display: flex;
@@ -99,16 +101,87 @@ body {
     margin: 4px 0;
 }
 
+/* Navbar End */
+
+/* Header Contants */
+.header_contents {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 70px;
+    padding: 35px 257px;
+
+}
+
+.header_contents h1 {
+    font-size: 96px;
+    color: var(--secondary-font-color);
+    font-weight: 700;
+}
+
+.header_contents h4 {
+    font-size: 40px;
+    color: var(--primary-font-color);
+    font-weight: 500;
+}
+
+.header_contents p {
+    max-width: 50%;
+    font-size: 20px;
+    margin-top: 25px;
+    color: var(--primary-font-color);
+    font-weight: 500;
+    text-align: justify;
+}
+
+.header_btn_container {
+    margin-top: 38px;
+}
+
+.header_btn_container .hire_me_btn {
+    width: 189px;
+    height: 52px;
+    border: none;
+    margin-right: 38px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: var(--primary-font-color);
+    background-color: var(--secondary-font-color);
+    cursor: pointer;
+
+}
+
+.header_btn_container .contact_me_btn {
+    width: 189px;
+    height: 52px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: black;
+    background-color: var(--primary-font-color);
+    cursor: pointer;
+
+}
+
 /* Navbar Responsive Code */
 @media (max-width:768px) {
-    .header_section{
+    .nav_menu{
+        border-radius: 10px;
+        background-color: black;
+        opacity: 80%;
+        padding: 20px 0;
+    }
+    #download_cv_btn{
+        opacity: 100%;
+    }
+    .header_section {
         height: 100vh;
         background-size: cover;
-        background-repeat:no-repeat;
+        background-repeat: no-repeat;
     }
+
     .nav_container {
         padding: 35px 20px;
     }
+
     .nav_menu {
         display: none;
         flex-direction: column;
@@ -117,12 +190,14 @@ body {
         position: absolute;
         top: 80px;
         left: 0;
-       
+
     }
+
     .nav_menu ul {
         flex-direction: column;
         align-items: center;
     }
+
     .nav_menu ul li {
         margin: 10px 0;
     }
@@ -134,4 +209,31 @@ body {
     .hamburger {
         display: flex;
     }
+}
+
+@media (max-width:768px) {
+    .header_contents {
+        font-family: "Montserrat", sans-serif;
+        margin-top: 10px;
+        padding: 15px 15px;
+
+    }
+
+    .header_contents h1 {
+        font-size: 40px;
+    }
+
+    .header_contents h4 {
+        font-size: 25px;
+    }
+
+    .header_contents p {
+        max-width: 100%;
+    }
+    .header_btn_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
