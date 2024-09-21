@@ -290,14 +290,18 @@ body {
 }
 
 .services_serction>h2,
-.projects_serction>h1 {
+.projects_serction>h1,
+.testimonials_section>h1,
+.contact_me_section>h1 {
     text-align: center;
     font-size: 55px;
     color: var(--primary-font-color);
 }
 
 .services_serction>p,
-.projects_serction>p {
+.projects_serction>p,
+.testimonials_section>p,
+.contact_me_section>p {
     text-align: center;
     font-size: 24px;
     color: var(--primary-font-color);
@@ -367,6 +371,79 @@ body {
     margin: 60px 0px;
     padding: 35px 257px;
 
+}
+
+/* Testimonials Section */
+.testimonials_section {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-font-color);
+}
+
+.testimonial_card {
+    position: relative;
+    width: 290px;
+    height: 290px;
+    padding: 20px;
+    border: 1px solid var(--primary-font-color);
+    border-radius: 15px;
+    text-align: justify;
+}
+
+.testimonial_card>p {
+    margin-top: 90px;
+}
+
+.testimonial_img {
+    position: absolute;
+    top: -30%;
+    left: 25%;
+    border-radius: 50%;
+}
+
+.testimonials_icons {
+    margin-top: 10px;
+}
+
+.testimonials_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-family: "Montserrat", sans-serif;
+    padding: 35px 257px;
+    margin: 100px 0px;
+}
+
+/* Contact Me Section */
+.contact_me_section {
+    font-family: "Montserrat", sans-serif;
+    padding: 35px 257px;
+    margin: 100px 0px;
+}
+.contact_option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 50px 0px;
+}
+.contact_option >button{
+    width: 274px;
+    height: 75px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--secondary-font-color);
+    color: var(--primary-font-color);
+    font-size: 24px;
+}
+
+#email_field {
+    font-family: "Montserrat", sans-serif;
+    width: 630px;
+    height: 75px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 24px;
+    color: black;
 }
 
 /* Navbar Responsive Code */
@@ -510,18 +587,22 @@ body {
 
 /* Service Responsive Code */
 @media (max-width:768px) {
-    .services_serction,.projects_serction{
+
+    .services_serction,
+    .projects_serction {
         font-family: "Montserrat", sans-serif;
         margin-top: 10px;
         padding: 15px 15px;
     }
 
-    .services_serction>h2,.projects_serction>h1 {
+    .services_serction>h2,
+    .projects_serction>h1 {
         font-size: 35px;
         text-align: center;
     }
 
-    .services_serction>p,.projects_serction>p {
+    .services_serction>p,
+    .projects_serction>p {
         font-size: 18px;
         text-align: center;
         margin-top: 10px;
@@ -544,11 +625,13 @@ body {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 40px;
         padding: 0px;
-        
+
     }
-    .project_demo img{
+
+    .project_demo img {
         max-width: 90%;
     }
+
     .projects_menu button {
         font-size: 18px;
         margin: 5px;
