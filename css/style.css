@@ -101,6 +101,10 @@ body {
     margin: 4px 0;
 }
 
+#download_cv_btn {
+    padding: 0px 15px;
+}
+
 /* Navbar End */
 
 /* Header Contants */
@@ -127,9 +131,10 @@ body {
     max-width: 50%;
     font-size: 24px;
     margin-top: 25px;
-    color: var(--primary-font-color);
     font-weight: 500;
     text-align: justify;
+    line-height: 40px;
+    color: var(--primary-font-color);
 }
 
 .header_btn_container {
@@ -143,6 +148,7 @@ body {
     margin-right: 38px;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: 500;
     color: var(--primary-font-color);
     background-color: var(--secondary-font-color);
     cursor: pointer;
@@ -155,6 +161,7 @@ body {
     border: none;
     border-radius: 5px;
     font-size: 18px;
+    font-weight: 500;
     color: black;
     background-color: var(--primary-font-color);
     cursor: pointer;
@@ -304,6 +311,7 @@ body {
 .contact_me_section>p {
     text-align: center;
     font-size: 24px;
+    margin-top: 30px;
     color: var(--primary-font-color);
 }
 
@@ -323,7 +331,7 @@ body {
     padding: 25px;
     border-radius: 10px;
     color: black !important;
-    background-color: var(--primary-font-color);
+    background-color: #FFECEC;
 }
 
 .services_item img {
@@ -361,7 +369,7 @@ body {
 #active_project {
     color: var(--primary-font-color);
     background-color: var(--secondary-font-color);
-    border: none;
+    border-color: var(--secondary-font-color);
 }
 
 .project_demo {
@@ -377,6 +385,7 @@ body {
 .testimonials_section {
     font-family: "Montserrat", sans-serif;
     color: var(--primary-font-color);
+    margin-top: 200px;
 }
 
 .testimonial_card {
@@ -469,7 +478,10 @@ body {
 
 
 }
-
+.footer_item a{
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
 .footer_item {
     margin-right: 20px;
     font-size: 24px;
