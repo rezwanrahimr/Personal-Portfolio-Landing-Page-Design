@@ -478,10 +478,12 @@ body {
 
 
 }
-.footer_item a{
+
+.footer_item a {
     text-decoration: none;
     color: var(--primary-font-color);
 }
+
 .footer_item {
     margin-right: 20px;
     font-size: 24px;
@@ -509,12 +511,14 @@ body {
     margin-top: 30px;
 }
 
+
+
 /* Navbar Responsive Code */
 @media (max-width:768px) {
     .nav_menu {
         border-radius: 10px;
         background-color: black;
-        opacity: 80%;
+        opacity: 95%;
         padding: 20px 0;
     }
 
@@ -578,6 +582,8 @@ body {
     }
 
     .header_contents p {
+        font-size: 18px;
+        line-height: 30px;
         max-width: 100%;
     }
 
@@ -612,6 +618,9 @@ body {
         margin: 10px 0px;
     }
 
+    #about_img{
+        max-width: 100%;
+    }
     #ux_design img {
         position: absolute;
         top: 0;
@@ -644,28 +653,32 @@ body {
         cursor: pointer;
     }
 
-
-    #about_img {}
 }
 
 /* Service Responsive Code */
 @media (max-width:768px) {
 
     .services_serction,
-    .projects_serction {
+    .projects_serction,
+    .testimonials_section,
+    .contact_me_section {
         font-family: "Montserrat", sans-serif;
         margin-top: 10px;
         padding: 15px 15px;
     }
 
     .services_serction>h2,
-    .projects_serction>h1 {
+    .projects_serction>h1,
+    .testimonials_section>h1,
+    .contact_me_section>h1 {
         font-size: 35px;
         text-align: center;
     }
 
     .services_serction>p,
-    .projects_serction>p {
+    .projects_serction>p,
+    .testimonials_section>p,
+    .contact_me_section>p {
         font-size: 18px;
         text-align: center;
         margin-top: 10px;
@@ -683,10 +696,13 @@ body {
 
 /* Projects Responsive Code */
 @media (max-width:768px) {
-    .project_demo {
+
+    .project_demo,
+    .testimonials_cards {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin-left: 40px;
+        gap: 50px;
         padding: 0px;
 
     }
@@ -698,5 +714,58 @@ body {
     .projects_menu button {
         font-size: 18px;
         margin: 5px;
+    }
+}
+
+/* Footer Responsive Code */
+@media(max-width:768px) {
+    .footer{
+        margin: 0px;
+    }
+    .footer_items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer_item {
+        margin: 10px 0;
+    }
+
+    .footer_icons img {
+        margin-right: 20px;
+    }
+}
+
+/* Common Responsive Code */
+@media(max-width:768px) {
+    .contact_option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin: 20px 0px;
+    }
+
+    #email_field {
+        font-family: "Montserrat", sans-serif;
+        width: 90%;
+        height: 55px;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 18px;
+        color: black;
+    }
+
+    .contact_option>button {
+        width: 50%;
+        height: 55px;
+        border: none;
+        border-radius: 10px;
+        background-color: var(--secondary-font-color);
+        color: var(--primary-font-color);
+        font-size: 18px;
     }
 }
